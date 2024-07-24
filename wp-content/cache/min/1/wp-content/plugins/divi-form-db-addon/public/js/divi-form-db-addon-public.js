@@ -1,0 +1,2 @@
+(function($){'use strict'})(jQuery);function cn_open(argument){jQuery('#cn_model_'+argument).show()}
+function cn_export(argument){jQuery('.mylod').show();jQuery.post(cn_plugin_vars.ajaxurl,{'action':'cn_custom_public_ajax','param':'cn_export','form_unique_id':argument},function(response){window.location.href=response;jQuery('.mylod').hide()})}
